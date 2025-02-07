@@ -62,6 +62,6 @@ class BasicAuthTest {
                 );
 
         loginResponse.andDo(print());
-        loginResponse.andExpect(status().isUnauthorized());
+        loginResponse.andExpect(status().isForbidden());
     }
 }
